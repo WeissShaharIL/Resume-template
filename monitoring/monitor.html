@@ -1,0 +1,54 @@
+
+<!-- saved from url=(0043)https://devopsmonitoring.azurewebsites.net/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <style>
+             .button {
+        position: relative;
+        background-color: #4285F4;
+        border: none;
+        font-size: 12px;
+        color: #FFFFFF;
+        padding: 2px;
+        width: 80px;
+        height: 20px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      
+      .button:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+      pre {
+        font-size: 16px;
+    }
+    </style>
+
+    <title>Camilyo Monitor</title>
+    </head><body style="background-color: #cff0fa;"><h1 style="text-align: center;">DevOps Monitoring Page</h1>
+    
+    <pre>View Application Insight failures - By roles (PROD)       <button class="button" onclick="window.location.href=&#39;FARM1-appInsight24.html&#39;">24Hrs</button> <button class="button" onclick="window.location.href=&#39;FARM1-appInsight7.html&#39;">Week</button></pre>
+    <pre>View Application Insight failures - By roles (STG)        <button class="button" onclick="window.location.href=&#39;FARM1-STG-appInsight24.html&#39;">24Hrs</button> <button class="button" onclick="window.location.href=&#39;FARM1-STG-appInsight7.html&#39;">Week</button></pre>
+    <pre>View service bus error queue (Updated every ~15 min)      <button class="button" onclick="window.location.href=&#39;servicebusmonitor.html&#39;">View</button></pre>
+    <pre>Application insight - DDos Attack                         <button class="button" onclick="window.location.href=&#39;appddos.html&#39;">View</button></pre>
+    
+    
+    </body></html>

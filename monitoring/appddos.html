@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+            <title>AI Monitor - DDos</title>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <style>
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            }
+
+            td, th {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 8px;
+            }
+
+            tr:nth-child(even) {
+              background-color: #b4cfd8;
+            }
+               .tab {
+             overflow: hidden;
+             border: 1px solid #ccc;
+             background-color: #b4cfd8;
+             width: 30%;
+            }
+
+
+            /* Style the buttons inside the tab */
+            .tab button {
+            background-color: inherit;
+            float: left;    
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+            background-color: #ffffff;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+            background-color: #ffffff;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            }
+
+            </style>
+            </head>
+            <body style="background-color: #cff0fa;">
+            <h1><center>Application insight - Top by Client IP &amp; by URL</center></h1>
+            
+            <p>Choose metric:</p>
+
+            <div class="tab">
+            <button id="mybutton" class="tablinks active" onclick="openTable(event, &#39;Client_IP&#39;)">Client_IP</button>
+            <button class="tablinks" onclick="openTable(event, &#39;URL&#39;)">URL</button>
+            </div>
+
+            <div id="Client_IP" class="tabcontent" style="display: block;">
+<h2><center>By Client IP</center></h2>
+<h3>&#8195;Farm1</h3>
+<table>
+ <tbody><tr>
+<th>IP</th>
+    <th>Requests</th>
+    <th>Country</th>
+  </tr>
+ <tr>
+    <td>2.1.1.8</td>
+    <td>218</td>
+    <td>Ireland</td>
+  </tr>
+ <tr>
+    <td>5.16.64.50</td>
+    <td>56</td>
+    <td>null</td>
+  </tr>
+ <tr>
+    <td>19.14.17.9</td>
+    <td>53</td>
+    <td>France</td>
+  </tr>
+</tbody></table>
+<h3>&#8195;BRAZIL</h3>
+<table>
+ <tbody><tr>
+<th>IP</th>
+    <th>Requests</th>
+    <th>Country</th>
+  </tr>
+ <tr>
+    <td>14.20.159.175</td>
+    <td>53</td>
+    <td>United States</td>
+  </tr>
+</tbody></table>
+<h3>&#8195;EU</h3>
+<table>
+ <tbody><tr>
+<th>IP</th>
+    <th>Requests</th>
+    <th>Country</th>
+  </tr>
+ <tr>
+    <td>94.21.54.21</td>
+    <td>51</td>
+    <td>Russia</td>
+  </tr>
+</tbody></table>
+<h3>&#8195;US</h3>
+<p>Did not found any ip that has more than 50 requests in the last 1h</p>
+<h3>&#8195;ASIA</h3>
+<p>Did not found any ip that has more than 50 requests in the last 1h</p>
+</div>
+<div id="URL" class="tabcontent" style="display: none;"><h2><center>By URL</center></h2><h3>&#8195;FARM1</h3>
+<table>
+ <tbody><tr>
+<th>URL</th>
+    <th>Requests</th>
+    </tr>
+ <tr>
+    <td>http://monitorsite.farm1:81/render.ashx?skip-cache=true</td>
+    <td>41</td>
+   </tr>
+ <tr>
+    <td>http://monitorsite.farm22.site:81/render.ashx</td>
+    <td>38</td>
+   </tr>
+ <tr>
+    <td>https://monitorsite.farm3.site:1443/render.ashx?skip-cache=true</td>
+    <td>35</td>
+   </tr>
+ <tr>
+    <td>https://monitorsite.internal.farm3.site:1443/render.ashx</td>
+    <td>35</td>
+   </tr>
+ <tr>
+    <td>http://monitorsite.internal.farm2.site/render.ashx</td>
+    <td>22</td>
+   </tr>
+</tbody></table>
+<h3>&#8195;BRAZIL</h3>
+<table>
+ <tbody><tr>
+<th>URL</th>
+    <th>Requests</th>
+    </tr>
+ <tr>
+    <td>https://www.bla.com/render.ashx</td>
+    <td>32</td>
+   </tr>
+ <tr>
+    <td>https://monitor-clean.adn.bla.com/render.ashx</td>
+    <td>21</td>
+   </tr>
+</tbody></table>
+<h3>&#8195;EU</h3>
+<table>
+ <tbody><tr>
+<th>URL</th>
+    <th>Requests</th>
+    </tr>
+ <tr>
+    <td>http://monitorsite.camilyo.co/render.ashx</td>
+    <td>21</td>
+   </tr>
+</tbody></table>
+<h3>&#8195;US</h3>
+<p>Did not found any URL that has more than 20 requests in the last 1h</p>
+<h3>&#8195;ASIA</h3>
+<p>Did not found any URL that has more than 20 requests in the last 1h</p>
+</div>
+
+            <br>
+            <p><small>Generated : 05/04/2022 05:47:40 (GMT +0)</small></p>
+            <script>
+            function openTable(evt, metric) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(metric).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            document.addEventListener("DOMContentLoaded", function(event) { 
+            document.getElementById("mybutton").click(); });
+            </script>
+            
+            </body></html>

@@ -1,0 +1,506 @@
+
+<!-- saved from url=(0076)https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Service-Exception monitor</title>
+     <style>
+      .button {
+        position: relative;
+        background-color: #4285F4;
+        border: none;
+        font-size: 14px;
+        color: #FFFFFF;
+        padding: 10px;
+        width: 80px;
+        height: 40px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      
+      .button:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+      </style>
+    <script type="text/javascript" charset="UTF-8" src="./FARM1-STG-appInsight24_files/loader.js.download"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./FARM1-STG-appInsight24_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./FARM1-STG-appInsight24_files/util.css"><script type="text/javascript" charset="UTF-8" src="./FARM1-STG-appInsight24_files/jsapi_compiled_default_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./FARM1-STG-appInsight24_files/jsapi_compiled_graphics_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./FARM1-STG-appInsight24_files/jsapi_compiled_ui_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./FARM1-STG-appInsight24_files/jsapi_compiled_corechart_module.js.download"></script></head><body style="background-color: #cff0fa;"><h1 style="text-align: center;">Top exception types (Last 24 Hours)</h1>
+    
+
+
+    <script type="text/javascript" src="./FARM1-STG-appInsight24_files/loader.js(1).download"></script>
+    <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});google.charts.setOnLoadCallback(BusinessBrief);
+google.charts.setOnLoadCallback(CallManagement);
+google.charts.setOnLoadCallback(Coupon);
+google.charts.setOnLoadCallback(Crm);
+google.charts.setOnLoadCallback(DomainManagement);
+google.charts.setOnLoadCallback(Inbox);
+google.charts.setOnLoadCallback(MarketingAdvisor);
+google.charts.setOnLoadCallback(ServiceCommerce);
+google.charts.setOnLoadCallback(SiteManagement);
+google.charts.setOnLoadCallback(SiteScraper);
+google.charts.setOnLoadCallback(Social);
+function BusinessBrief() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['JsonApiDotNetCore.Errors.JsonApiException', 2]
+         ]);
+        var options = {title:'BusinessBrief',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('BusinessBrief'));
+        chart.draw(data, options);}
+function BusinessBriefPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['JsonApiDotNetCore.Errors.JsonApiException', 2]
+         ]);
+        var options = {title:'BusinessBrief',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('BusinessBrief'));
+        chart.draw(data, options);}
+function CallManagement() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['MySqlConnector.MySqlException', 5]
+         ]);
+        var options = {title:'CallManagement',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('CallManagement'));
+        chart.draw(data, options);}
+function CallManagementPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['MySqlConnector.MySqlException', 5]
+         ]);
+        var options = {title:'CallManagement',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('CallManagement'));
+        chart.draw(data, options);}
+function Coupon() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        
+         ]);
+        var options = {title:'Coupon',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('Coupon'));
+        chart.draw(data, options);}
+function CouponPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        
+         ]);
+        var options = {title:'Coupon',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('Coupon'));
+        chart.draw(data, options);}
+function Crm() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['System.Net.Sockets.SocketException', 6],
+	['MySqlConnector.MySqlException', 5]
+         ]);
+        var options = {title:'Crm',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('Crm'));
+        chart.draw(data, options);}
+function CrmPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['System.Net.Sockets.SocketException', 6],
+	['MySqlConnector.MySqlException', 5]
+         ]);
+        var options = {title:'Crm',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('Crm'));
+        chart.draw(data, options);}
+function DomainManagement() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        
+         ]);
+        var options = {title:'DomainManagement',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('DomainManagement'));
+        chart.draw(data, options);}
+function DomainManagementPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        
+         ]);
+        var options = {title:'DomainManagement',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('DomainManagement'));
+        chart.draw(data, options);}
+function Inbox() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        
+         ]);
+        var options = {title:'Inbox',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('Inbox'));
+        chart.draw(data, options);}
+function InboxPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        
+         ]);
+        var options = {title:'Inbox',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('Inbox'));
+        chart.draw(data, options);}
+function MarketingAdvisor() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['MySqlConnector.MySqlException', 15]
+         ]);
+        var options = {title:'MarketingAdvisor',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('MarketingAdvisor'));
+        chart.draw(data, options);}
+function MarketingAdvisorPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['MySqlConnector.MySqlException', 15]
+         ]);
+        var options = {title:'MarketingAdvisor',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('MarketingAdvisor'));
+        chart.draw(data, options);}
+function ServiceCommerce() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['System.ArgumentNullException', 1],
+	['MySql.Data.MySqlClient.MySqlException', 3]
+         ]);
+        var options = {title:'ServiceCommerce',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('ServiceCommerce'));
+        chart.draw(data, options);}
+function ServiceCommercePieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['System.ArgumentNullException', 1],
+	['MySql.Data.MySqlClient.MySqlException', 3]
+         ]);
+        var options = {title:'ServiceCommerce',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('ServiceCommerce'));
+        chart.draw(data, options);}
+function SiteManagement() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['MySqlConnector.MySqlException', 7],
+	['System.Threading.Tasks.TaskCanceledException', 1]
+         ]);
+        var options = {title:'SiteManagement',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('SiteManagement'));
+        chart.draw(data, options);}
+function SiteManagementPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['MySqlConnector.MySqlException', 7],
+	['System.Threading.Tasks.TaskCanceledException', 1]
+         ]);
+        var options = {title:'SiteManagement',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('SiteManagement'));
+        chart.draw(data, options);}
+function SiteScraper() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['Microsoft.Playwright.PlaywrightException', 2]
+         ]);
+        var options = {title:'SiteScraper',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('SiteScraper'));
+        chart.draw(data, options);}
+function SiteScraperPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['Microsoft.Playwright.PlaywrightException', 2]
+         ]);
+        var options = {title:'SiteScraper',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('SiteScraper'));
+        chart.draw(data, options);}
+function Social() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['System.ArgumentNullException', 292]
+         ]);
+        var options = {title:'Social',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('Social'));
+        chart.draw(data, options);}
+function SocialPieChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Errors');
+        data.addRows([
+        ['System.ArgumentNullException', 292]
+         ]);
+        var options = {title:'Social',
+                       width:600,
+                       height:200,
+                       animation:{
+                         "startup": true,
+                          duration: 1500,
+                          easing: 'out'}
+                        };
+        var chart = new google.visualization.PieChart(document.getElementById('Social'));
+        chart.draw(data, options);}
+function Pie() {
+            google.charts.setOnLoadCallback(BusinessBriefPieChart);
+google.charts.setOnLoadCallback(CallManagementPieChart);
+google.charts.setOnLoadCallback(CouponPieChart);
+google.charts.setOnLoadCallback(CrmPieChart);
+google.charts.setOnLoadCallback(DomainManagementPieChart);
+google.charts.setOnLoadCallback(InboxPieChart);
+google.charts.setOnLoadCallback(MarketingAdvisorPieChart);
+google.charts.setOnLoadCallback(ServiceCommercePieChart);
+google.charts.setOnLoadCallback(SiteManagementPieChart);
+google.charts.setOnLoadCallback(SiteScraperPieChart);
+google.charts.setOnLoadCallback(SocialPieChart);
+
+            }
+
+
+            function Coloums() {
+            google.charts.setOnLoadCallback(BusinessBrief);
+google.charts.setOnLoadCallback(CallManagement);
+google.charts.setOnLoadCallback(Coupon);
+google.charts.setOnLoadCallback(Crm);
+google.charts.setOnLoadCallback(DomainManagement);
+google.charts.setOnLoadCallback(Inbox);
+google.charts.setOnLoadCallback(MarketingAdvisor);
+google.charts.setOnLoadCallback(ServiceCommerce);
+google.charts.setOnLoadCallback(SiteManagement);
+google.charts.setOnLoadCallback(SiteScraper);
+google.charts.setOnLoadCallback(Social);
+
+            }
+            Coloums()
+ </script>
+ 
+
+<table class="columns">
+	<tbody><tr>
+	<td><div id="BusinessBrief" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1666"><clippath id="_ABSTRACT_RENDERER_ID_1667"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">BusinessBrief</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1667)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="120" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="79" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="141" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="59" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="165" y="80" width="271" height="81" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="300.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">JsonApiDotNetCore.Errors.JsonApiException</text></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="68" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1</text></g><g><text text-anchor="end" x="68" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">2</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">3</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="CallManagement" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1672"><clippath id="_ABSTRACT_RENDERER_ID_1673"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">CallManagement</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1673)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="130" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="69" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="165" y="101" width="271" height="306" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g></g><g><g><text text-anchor="middle" x="300.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">MySqlConnector.MySqlException</text></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">4</text></g><g><text text-anchor="end" x="68" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">5</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">6</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="Coupon" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1674"><clippath id="_ABSTRACT_RENDERER_ID_1675"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Coupon</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1675)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="130" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="69" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="68" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1.0</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	</tr>
+	</tbody></table>
+<table class="columns">
+	<tbody><tr>
+	<td><div id="Crm" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1686"><clippath id="_ABSTRACT_RENDERER_ID_1687"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Crm</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1687)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="120" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="79" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="141" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="59" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="123" y="39" width="135" height="491" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="343" y="121" width="135" height="409" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g></g><g><g><text text-anchor="middle" x="190.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">System.Net.Sockets.SocketException</text></g><g><text text-anchor="middle" x="410.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">MySqlConnector.MySqlException</text></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">4.5</text></g><g><text text-anchor="end" x="68" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">5.0</text></g><g><text text-anchor="end" x="68" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">5.5</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">6.0</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="DomainManagement" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1696"><clippath id="_ABSTRACT_RENDERER_ID_1697"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">DomainManagement</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1697)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="130" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="69" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="68" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1.0</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="Inbox" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1698"><clippath id="_ABSTRACT_RENDERER_ID_1699"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Inbox</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1699)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="130" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="69" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="68" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1.0</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	</tr>
+	</tbody></table>
+<table class="columns">
+	<tbody><tr>
+	<td><div id="MarketingAdvisor" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1704"><clippath id="_ABSTRACT_RENDERER_ID_1705"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">MarketingAdvisor</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1705)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="130" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="69" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="165" y="101" width="271" height="921" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g></g><g><g><text text-anchor="middle" x="300.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">MySqlConnector.MySqlException</text></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">14</text></g><g><text text-anchor="end" x="68" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">15</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">16</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="ServiceCommerce" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1706"><clippath id="_ABSTRACT_RENDERER_ID_1707"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">ServiceCommerce</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1707)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="120" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="79" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="141" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="59" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="123" y="121" width="135" height="40" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="343" y="39" width="135" height="122" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="190.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">System.ArgumentNullException</text></g><g><text text-anchor="middle" x="410.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">MySql.Data.MySqlClient.MySqlExce�</text><rect x="308" y="169" width="205" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="68" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1</text></g><g><text text-anchor="end" x="68" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">2</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">3</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="SiteManagement" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1710"><clippath id="_ABSTRACT_RENDERER_ID_1711"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">SiteManagement</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1711)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="120" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="79" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><rect x="123" y="47" width="135" height="114" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="343" y="146" width="135" height="15" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="190.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">MySqlConnector.MySqlException</text></g><g><text text-anchor="middle" x="410.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">System.Threading.Tasks.TaskCancel�</text><rect x="306" y="169" width="209" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="68" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">2.5</text></g><g><text text-anchor="end" x="68" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">5.0</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">7.5</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	</tr>
+	</tbody></table>
+<table class="columns">
+	<tbody><tr>
+	<td><div id="SiteScraper" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1716"><clippath id="_ABSTRACT_RENDERER_ID_1717"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">SiteScraper</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1717)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="120" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="79" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="141" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="59" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="165" y="80" width="271" height="81" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="300.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Microsoft.Playwright.PlaywrightException</text></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="68" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1</text></g><g><text text-anchor="end" x="68" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">2</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">3</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	<td><div id="Social" style="border: 5px solid #ccc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1718"><clippath id="_ABSTRACT_RENDERER_ID_1719"><rect x="80" y="38" width="441" height="124"></rect></clippath></defs><rect x="0" y="0" width="600" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="80" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Social</text><rect x="80" y="13" width="441" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="533" y="38" width="55" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="562" y="48.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Er�</text><rect x="562" y="38" width="26" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><rect x="533" y="38" width="24" height="12" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g><rect x="80" y="38" width="441" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://devopsmonitoring.azurewebsites.net/FARM1-STG-appInsight24.html#_ABSTRACT_RENDERER_ID_1719)"><g><rect x="80" y="161" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="100" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="38" width="441" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="80" y="130" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="80" y="69" width="441" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="165" y="101" width="271" height="17957" stroke="none" stroke-width="0" fill="#3366cc"></rect></g></g><g></g><g><g><text text-anchor="middle" x="300.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">System.ArgumentNullException</text></g><g><text text-anchor="end" x="68" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">291</text></g><g><text text-anchor="end" x="68" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">292</text></g><g><text text-anchor="end" x="68" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">293</text></g></g></g><g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 12px;">Er�</div><div></div></div></div></td>
+	</tr>
+	</tbody></table>
+<button class="button" onclick="Pie()">Pie</button>
+                <button class="button" onclick="Coloums()">Coloums</button>
+    <p><small>Generated : 05/04/2022 05:47:40 (GMT +0)</small></p><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">MySql.Data.MySqlClient.MySqlException</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">System.Threading.Tasks.TaskCanceledException</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">MySql.Data.MySqlClient.MySqlException</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">System.Threading.Tasks.TaskCanceledException</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div><div style="position: absolute; display: none;"><div style="background: infobackground; padding: 1px; border: 1px solid infotext; font-size: 12px; margin: 12px; font-family: Arial;">Errors</div></div>
+    
+    </body></html>

@@ -1,0 +1,250 @@
+
+<!-- saved from url=(0065)https://devopsmonitoring.azurewebsites.net/servicebusmonitor.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+                <title>ServiceBus Monitor</title>
+                <style>
+                    .blink {
+                    animation: blinker 2s linear infinite;
+                    color: red;
+                    font-size: 30px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    }
+                    @keyframes blinker {
+                    50% {
+                        opacity: 0;
+                    }
+                    }
+                    .blink-one {
+                    animation: blinker-one 1s linear infinite;
+                    }
+                    @keyframes blinker-one {
+                    0% {
+                        opacity: 0;
+                    }
+                    }
+                  
+                    .hoverTable{
+                    width:100%; 
+                    table-layout: auto;
+                    border: 1px solid black;
+                    border-collapse:collapse; 
+                        }
+                        .hoverTable td{ 
+                            padding:7px; border:#000000 1px solid;
+                        }
+                        /* Define the default color for all the table rows */
+                        .hoverTable tr{
+                            background: #cff0fa;
+                        }
+                        /* Define the hover highlight color for the table row */
+                        .hoverTable tr:hover {
+                            background-color: #ffffff;
+                        }
+                    
+                    
+                </style>
+                </head>
+                <body style="background-color: #cff0fa;"><h1><center>ServiceBus Error Queues Monitor</center></h1><table class="hoverTable">
+
+                    
+                    <tbody><tr style="background-color: #dcedf2;">
+                    <td style="width: 200px; text-align: center;"><strong>UPDATED: 05/04/2022 05:47:40</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service1</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service2</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service3</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service4</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service5</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service6</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service7</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service8</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service9</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service10</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service11</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service12</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service13</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service14</strong></td>
+<td style="width: 200px; font-size:120%; text-align: center;"><strong>Service15</strong></td>
+</tr>
+                    <tr>
+                    </tr><tr>
+<td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>FARM1</strong></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">24</a></p></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">2</a></p></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">4</a></p></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">4</a></p></td>
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>FARM2</strong></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>ASIA</strong></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>EU</strong></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>US</strong></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+
+</tr>
+<tr>              
+                <th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+<th style="background-color: #ADD8E6; padding:30px"></th>
+
+
+                </tr> <tr>
+<td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>STG</strong></td><td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>FARM2BETA</strong></td><td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>DEVELOP</strong></td><td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">7</a></p></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">4</a></p></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">4</a></p></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">1</a></p></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">8</a></p></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">6</a></p></td>
+
+</tr>
+<tr><td style="width: 200px; font-size:130%; text-align: center; background-color: #dcedf2;"><strong>SOFTWARE</strong></td><td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">4</a></p></td>
+<td style="width: 200px; height: 40px; text-align: center;"><span style="color: #000000">---</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; font-size:130%; height: 40px; text-align: center;"><span style="color: #000000; background-color: #00ff00;">Good</span></td>
+<td style="width: 200px; height: 40px; text-align: center;"><p class="blink"><a href="errorExample.html">2</a></p></td>
+
+</tr>
+
+                </tbody></table>
+                </body></html>
